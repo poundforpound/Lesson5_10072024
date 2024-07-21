@@ -40,7 +40,6 @@
             echo "0 результатов";
         }
 
-        $conn->close();
         ?>
     </div>
 </body>
