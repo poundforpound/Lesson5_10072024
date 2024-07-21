@@ -33,9 +33,9 @@
 			 echo $e->getMessage();
 		 }
         if ($result->num_rows > 0) {
-            while($row = $result) {
-                echo '<img src="["filename"]' . $row["image_name"] . '" alt="' . $row["image_alt"] . '">';
-            }
+          foreach($result as $row){
+            echo $row;
+          }
         } else {
             echo "0 результатов";
         }
